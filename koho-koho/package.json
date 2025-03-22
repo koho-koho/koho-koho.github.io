@@ -1,7 +1,7 @@
 {
   "name": "koho-koho",
   "version": "0.1.0",
-  "homepage": "https://github.com/koho-koho/koho-koho.github.io",
+  "homepage": "https://koho-koho.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
