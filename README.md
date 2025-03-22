@@ -6,3 +6,6 @@
 🌾 _This website's main purpose is to showcase the auspicious times for the Sinhala and Tamil New Year, based on your timezone._
 </div>
 
+Made with ❤️ by Milindi Kodikara 
+
+<a href="https://ko-fi.com/milindi"> Buy me a tea</a> 🍃

@@ -23,7 +23,7 @@ const App = () => {
                     <Nakath/>
                 </div>
             </header>
-            <footer className="footer">Made with ❤️ by Milindi Kodikara : : <a href="https://ko-fi.com/milindi"> Buy me a tea</a>🍃</footer>
+            <footer className="footer">Made with ❤️ by Milindi Kodikara : : <a href="https://ko-fi.com/milindi"> Buy me a tea</a> 🍃</footer>
         </div>
     )
 }
