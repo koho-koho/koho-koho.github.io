@@ -1,5 +1,6 @@
 import React from 'react';
 import getUserLocale from 'get-user-locale';
+import {DateTime} from 'luxon';
 
 import '../App.css';
 import './nakath.css';
@@ -9,9 +10,15 @@ const Nakath = () => {
     const user_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const user_locale = getUserLocale();
 
-    const get_times = (nakath_time: Date, only_date?: boolean) => {
-        const sl_time_formatted = only_date ? nakath_time.toLocaleDateString("si-LK", {timeZone: "Asia/Colombo", hour12: true}): nakath_time.toLocaleString("si-LK", {timeZone: "Asia/Colombo", hour12: true})
-        const user_time = only_date? nakath_time.toLocaleDateString(user_locale, {timeZone: user_timezone, hour12: true}): nakath_time.toLocaleString(user_locale, {timeZone: user_timezone, hour12: true})
+    const get_times = (nakath_time: DateTime, date_only?: boolean) => {
+
+        const sl_time_formatted = date_only ?
+            nakath_time.setLocale("si-LK").toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY) :
+            nakath_time.setLocale("si-LK").toLocaleString(DateTime.DATETIME_FULL) ?? ""
+
+        const user_time = date_only ?
+            nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY) :
+            nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATETIME_FULL) ?? ""
 
         return [sl_time_formatted, user_time]
     }
@@ -19,32 +26,59 @@ const Nakath = () => {
     return (
         <div className="nakath-container">
             <Card titles={["නව සඳ බැලීම", "Observing the new moon"]}
-                  times={get_times(new Date("2025-03-30 GMT+05:30"), true)}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 3, day: 30},
+                          {zone: 'Asia/Colombo'})
+                      , true)}/>
 
             <Card titles={["පරණ අවුරුද්ද සඳහා ස්නානය", "Bathing for the old year"]}
-                  times={get_times(new Date("2025-04-13 GMT+05:30"), true)}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 13},
+                          {zone: 'Asia/Colombo'})
+                      , true)}/>
 
             <Card titles={["පුණ්‍ය කාලයේ ආරම්භය", "Start of inauspicious time"]}
-                  times={get_times(new Date("2025-04-13 20:57:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 13, hour: 20, minute: 57, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
 
             <Card titles={["අලුත් අවුරුදු උදාව", "Dawn of the new year"]}
-                  times={get_times(new Date("2025-04-14 03:21:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 3, minute: 21, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
 
             <Card titles={["පුණ්‍ය කාලයේ අවසානය", "End of inauspicious time"]}
-                  times={get_times(new Date("2025-04-14 09:45:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 9, minute: 45, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
 
             <Card titles={["ආහාර පිසීම", "Preparation of the traditional meal"]}
-                  times={get_times(new Date("2025-04-14 04:04:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 13, hour: 4, minute: 4, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
 
             <Card
                 titles={["වැඩ ඇල්ලීම, ගනුදෙනු කිරීම හා ආහාර අනුභවය", "Engaging in work, transactions and consuming the traditional meal made"]}
-                times={get_times(new Date("2025-04-14 06:44:00 GMT+05:30"))}/>
+                times={get_times(
+                    DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 6, minute: 44, second: 0},
+                        {zone: 'Asia/Colombo'})
+                )}/>
 
             <Card titles={["හිසතෙල් ගෑම", "Anointing oil"]}
-                  times={get_times(new Date("2025-04-16 09:04:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 16, hour: 9, minute: 4, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
 
             <Card titles={["රැකීරක්‍ෂා සඳහා පිටත්ව යෑම", "Depart for work"]}
-                  times={get_times(new Date("2025-04-17 09:03:00 GMT+05:30"))}/>
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 17, hour: 9, minute: 3, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
         </div>
 
     );
