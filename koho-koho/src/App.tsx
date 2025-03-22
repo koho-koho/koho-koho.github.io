@@ -1,18 +1,21 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import Nakath from "./components/nakath";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          🌞 කොහෝ කොහෝ : : Koho Koho 🌞
-        </p>
+          <h1>🌞 කොහෝ කොහෝ : : Koho Koho 🌞</h1>
+        <div className="App=body">
+            <Nakath />
+        </div>
       </header>
+    {/*TODO: Footer*/}
     </div>
-  );
+  )
 }
 
 export default App;
