@@ -1,4 +1,17 @@
-.container {
-    background-color: #61dafb;
-    padding: 10px;
+.card-container {
+    border: solid 1px #F7B718;
+    border-radius: 10px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+    margin: 10px;
 }
+
+.card-item {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: calc(10px + 2vmin);
+}
+

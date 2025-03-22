@@ -5,7 +5,7 @@
     width: 100%;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
-    background-color: green;
+    background-color: #941E32;
 }
 
 .App-logo {
@@ -15,27 +15,42 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 100s linear;
+        animation: App-logo-spin infinite 50s linear;
     }
 }
 
 .App-header {
-    background-color: red;
+    background-color: #941E32;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    vertical-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.heading-container {
+    display: inline;
+}
+
+.heading {
+    padding: 10px 30px;
     color: white;
+    font-size: calc(13px + 2vmin);
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
 }
 
-
-.App-body {
-    background-color: blue;
-}
-
-.App-link {
-    color: #61dafb;
+.description-container {
+    padding: 0 60px;
+    color: white;
+    font-size: calc(10px + 2vmin);
 }
 
 @keyframes App-logo-spin {
@@ -45,4 +60,36 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    padding: 0 5px;
+    color: white;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+    color: #F7B718;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }

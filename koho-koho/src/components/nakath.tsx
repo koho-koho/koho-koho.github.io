@@ -17,8 +17,7 @@ const Nakath = () => {
     }
 
     return (
-        <div className="container">
-            {/*TODO: Flex-box*/}
+        <div className="nakath-container">
             <Card titles={["නව සඳ බැලීම", "Observing the new moon"]}
                   times={get_times(new Date("2025-03-30 GMT+05:30"), true)}/>
 

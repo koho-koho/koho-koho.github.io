@@ -1,4 +1,5 @@
-.container {
-    background-color: orange;
-    padding: 10px;
+.nakath-container {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }

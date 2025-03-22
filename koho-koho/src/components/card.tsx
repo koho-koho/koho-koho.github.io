@@ -1,17 +1,16 @@
 import React from 'react';
 import './card.css';
 
-const Card = (props: {titles: string[], times: string[]}) => {
+const Card = (props: { titles: string[], times: string[] }) => {
     return (
-        <div className="container">
-            {/*TODO: Grid*/}
-            <div>
-                Title SL: {props.titles[0]}
-                SL Time: {props.times[0]}
+        <div className="card-container">
+            <div className="card-item">
+                <p>{props.titles[0]}</p>
+                <p>{props.times[0]}</p>
             </div>
-            <div>
-                Title User: {props.titles[1]}
-                User Time: {props.times[1]}
+            <div className="card-item">
+                <p>{props.titles[1]}</p>
+                <p>{props.times[1]}</p>
             </div>
         </div>
     );
