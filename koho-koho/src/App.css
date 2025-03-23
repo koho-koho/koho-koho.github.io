@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     vertical-align: center;
+    padding: 5px;
 }
 
 .header-container {
@@ -39,7 +40,7 @@
 }
 
 .heading {
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: white;
     font-size: calc(10px + 2vmin);
     font-family: "Abhaya Libre", serif;
@@ -47,7 +48,8 @@
 }
 
 .description-container {
-    padding: 0 60px;
+    padding: 0 25px;
+    margin: 10px;
     color: white;
     font-size: calc(10px + 2vmin);
 }
@@ -65,7 +67,7 @@
     background-color: black;
     color: white;
     font-size: calc(10px + 2vmin);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
