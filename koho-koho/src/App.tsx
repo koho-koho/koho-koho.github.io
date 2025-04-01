@@ -38,8 +38,10 @@ const App = () => {
                 </div>
             </header>
             <Nakath/>
-            <footer className="footer">Made with ❤️ by Milindi Kodikara : : <a href="https://ko-fi.com/milindi"> Buy me
-                a tea</a> 🍃
+            <footer className="footer"> Made with ❤️ by
+                <a href="https://github.com/Milindi-Kodikara" target="_blank">Milindi Kodikara</a> : : <a
+                    href="https://ko-fi.com/milindi" target="_blank"> Buy me
+                    a tea</a> 🍃
             </footer>
         </div>
     )
