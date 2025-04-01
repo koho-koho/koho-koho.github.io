@@ -1,5 +1,8 @@
 .nakath-container {
-    padding: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 0 10vw 5vh;
 }

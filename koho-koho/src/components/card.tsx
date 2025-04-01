@@ -5,12 +5,14 @@ const Card = (props: { titles: string[], times: string[] }) => {
     return (
         <div className="card-container">
             <div className="card-item">
-                <p>{props.titles[0]}</p>
-                <p>{props.times[0]}</p>
-            </div>
-            <div className="card-item">
-                <p>{props.titles[1]}</p>
-                <p>{props.times[1]}</p>
+                <div className="card-item-titles">
+                    <div className="card-heading">{props.titles[0]}</div>
+                    <div className="card-sub-heading">{props.titles[1]}</div>
+                </div>
+                <div className="card-item-titles">
+                    <div className="card-heading card-time-heading">{props.times[0]}</div>
+                    <div className="card-sub-heading">{props.times[1]}</div>
+                </div>
             </div>
         </div>
     );

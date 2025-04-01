@@ -4,7 +4,7 @@
     width: 100%;
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
-    background-color: #941E32;
+    background-color: #fff;
 }
 
 .App-logo {
@@ -19,13 +19,12 @@
 }
 
 .App-header {
-    background-color: #941E32;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     vertical-align: center;
-    padding: 5px;
 }
 
 .header-container {
@@ -37,21 +36,34 @@
 
 .heading-container {
     display: inline;
+
+    div {
+        text-align: center;
+    }
 }
 
 .heading {
     padding: 10px 20px;
-    color: white;
-    font-size: calc(10px + 2vmin);
+    color: #000;
+    font-size: calc(15px + 2vmin);
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
 }
 
-.description-container {
-    padding: 0 25px;
-    margin: 10px;
-    color: white;
+.sub-heading {
+    color: #676767;
     font-size: calc(10px + 2vmin);
+}
+
+.description-container {
+    color: #fff;
+    font-size: calc(12px + 2vmin);
+    background-color: #941E32;
+}
+
+.description-inner-container {
+    margin: 0 5px;
+    padding: 5vh 10vw;
 }
 
 @keyframes App-logo-spin {
@@ -79,18 +91,18 @@ a {
 }
 
 a:link {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
     color: #F7B718;
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
