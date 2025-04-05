@@ -11,7 +11,7 @@ const App = () => {
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
                     <div className="heading-container heading">
                         <div>කොහෝ කොහෝ</div>
-                        <div>கோ கோ</div>
+                        <div>கோகோ கோகோ</div>
                         <div className="sub-heading">koho koho</div>
                     </div>
                     <img className="App-logo heading-container" src={logo} alt="logo"/>

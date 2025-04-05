@@ -70,19 +70,19 @@ const Nakath = () => {
                 descriptions={["මුතු හා ස්වේත වර්ණ වස්ත්‍රාභරණයෙන් සැරසී දකුණු දිශාව බලා සියළු වැඩ අල්ලා ගනුදෙනු කොට ආහාර අනුභවය මැනවි.",
                     "Dressed in pearls and white colored clothes, facing South, engage in work/study, transactions and consumption of the traditional meal made."]}/>
 
-            <Card titles={["හිසතෙල් ගෑම", "Anointing oil"]}
+            <Card titles={["පුණ්‍ය කාලයේ අවසානය", "End of neutral period"]}
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 9, minute: 45, second: 0},
+                          {zone: 'Asia/Colombo'})
+                  )}/>
+
+             <Card titles={["හිසතෙල් ගෑම", "Anointing oil"]}
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 4, day: 16, hour: 9, minute: 4, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}
                   descriptions={["පච්ච වර්ණ හෙවත් කොළ පැහැති වස්ත්‍රාභරණයෙන් සැරසී උතුරු දිශාව බලා හිසට කොහොඹ පත්ද, පයට කොළොන් පත්ද තබා කොහොඹ පත් යුෂ මිශ්‍ර නානුද තෙල්ද ගා ස්නානය කිරීම මැනවි.",
                       "Dressed in green coloured clothing, facing North, put kohamba leaves above the head and kolon leaves under the feet and anoint oil mixed with kohamba leaf juice."]}/>
-
-            <Card titles={["පුණ්‍ය කාලයේ අවසානය", "End of neutral period"]}
-                  times={get_times(
-                      DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 9, minute: 45, second: 0},
-                          {zone: 'Asia/Colombo'})
-                  )}/>
 
             <Card titles={["රැකීරක්‍ෂා සඳහා පිටත්ව යෑම", "Depart for work"]}
                   times={get_times(
