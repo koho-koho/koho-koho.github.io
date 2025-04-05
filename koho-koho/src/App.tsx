@@ -38,7 +38,8 @@ const App = () => {
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
                     <div className="heading-container heading">
                         <div>අවුරුදු නැකැත් සීට්ටුව 2025</div>
-                        <div className="sub-heading">Auspicious times for the year 2025</div>
+                        <div>2025 ஆம் ஆண்டுக்கான புத்தாண்டு நல்ல நேரம்</div>
+                        <div className="sub-heading">New Year auspicious times for 2025</div>
                     </div>
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
                 </div>
