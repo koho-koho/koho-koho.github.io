@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './card.css';
+import expandIcon from '../icons/expand.svg';
 
 const Card = (props: { titles: string[], times: string[], descriptions?: string[] }) => {
     const [displayDetails, setDisplayDetails] = useState(false)
@@ -22,19 +23,25 @@ const Card = (props: { titles: string[], times: string[], descriptions?: string[
                         <button style={displayDetails ? {"borderRadius": "0"} : {"borderRadius": "0 0 10px 10px"}}
                                 onClick={() => {
                                     setDisplayDetails(!displayDetails)
-                                }}><span>{displayDetails ? "-" : "+"}</span></button>
+                                }}><span>
+                        {displayDetails && <img alt="expand icon" src={expandIcon} style={{transform: "scaleY(-1)"}}/>}
+                            {!displayDetails && <img alt="expand icon" src={expandIcon}/>}
+                            </span></button>
                         <div className="card-description-container"
                              style={displayDetails ? {} : {display: "none"}}>
                             <div className="card-item description-item">
                                 <div className="card-item-titles">
-                                    🪔 {props.descriptions[0]}
-                                </div>
-                                <div className="card-item-titles">
-                                    🪔 {props.descriptions[1]}
+                                    <div className="card-heading description-item-sinhala">
+                                        {props.descriptions[0]}
+                                    </div>
+                                    <div className="card-sub-heading">
+                                        {props.descriptions[1]}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </>)
+                    </>
+                )
             }
         </div>
     )

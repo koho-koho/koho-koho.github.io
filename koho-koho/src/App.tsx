@@ -11,6 +11,7 @@ const App = () => {
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
                     <div className="heading-container heading">
                         <div>කොහෝ කොහෝ</div>
+                        <div>கோ கோ</div>
                         <div className="sub-heading">koho koho</div>
                     </div>
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
@@ -22,6 +23,11 @@ const App = () => {
                             වසරේ සිංහල සහ දෙමළ අලුත් අවුරුදු
                             නැකැත් වේලාවන් ප්‍රදර්ශනය කිරීමයි.</p>
 
+                        <p> 🌾 இந்த இணையத்தளத்தின் முக்கிய நோக்கம், உங்கள் நேர மண்டலத்தின் அடிப்படையில், இலங்கையில் 2025
+                            சிங்கள மற்றும் தமிழ் புத்தாண்டுக்கான சுப நேரங்களை காட்சிப்படுத்துவதாகும். (மொழிபெயர்ப்புகள்
+                            தவறாக இருந்தால் சொல்லுங்கள்!)
+                        </p>
+
                         <p> 🌾 This website's main purpose is to showcase the auspicious times for the 2025 Sinhala and
                             Tamil
                             New
@@ -31,7 +37,7 @@ const App = () => {
                 <div className="header-container">
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
                     <div className="heading-container heading">
-                        <div>2025 වසරේ නැකැත් වේලාවන්</div>
+                        <div>අවුරුදු නැකැත් සීට්ටුව 2025</div>
                         <div className="sub-heading">Auspicious times for the year 2025</div>
                     </div>
                     <img className="App-logo heading-container" src={logo} alt="logo"/>
@@ -40,7 +46,7 @@ const App = () => {
             <Nakath/>
             <footer className="footer"> Made with ❤️ by
                 <a href="https://github.com/Milindi-Kodikara" target="_blank">Milindi Kodikara</a> : : <a
-                    href="https://ko-fi.com/milindi" target="_blank"> Buy me
+                    href="https://ko-fi.com/milindi" target="_blank"> Shout me
                     a tea</a> 🍃
             </footer>
         </div>

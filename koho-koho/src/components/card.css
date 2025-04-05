@@ -3,7 +3,7 @@
     border-radius: 10px;
     display: grid;
     margin: 20px;
-    min-width: 40vw;
+    /*width: 40vw;*/
 }
 
 .card-item {
@@ -31,7 +31,7 @@
 
 button {
     padding: 10px;
-    font-size: calc(6px + 2vmin);
+    font-size: calc(8px + 2vmin);
     background-color: #941E32;
     color: white;
     font-weight: bold;
@@ -52,10 +52,12 @@ button {
 }
 
 .description-item {
-    font-size: calc(8px + 2vmin);
-
     div {
-        color: white;
+        font-size: calc(8px + 2vmin);
     }
+}
+
+.description-item-sinhala {
+    color: white;
 }
 
