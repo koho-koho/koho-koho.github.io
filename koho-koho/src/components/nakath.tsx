@@ -25,7 +25,7 @@ const Nakath = () => {
 
     return (
         <div className="nakath-container">
-            <Card titles={["නව සඳ බැලීම", "Observing the new moon"]}
+            <Card titles={["නව සඳ බැලීම", "Observing the new moon for the new lunar year"]}
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 3, day: 30},
                           {zone: 'Asia/Colombo'})
@@ -79,6 +79,12 @@ const Nakath = () => {
                       DateTime.fromObject({year: 2025, month: 4, day: 17, hour: 9, minute: 3, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}/>
+
+            <Card titles={["නව සඳ බැලීම", "Observing the new moon for the new solar year"]}
+                  times={get_times(
+                      DateTime.fromObject({year: 2025, month: 5, day: 1},
+                          {zone: 'Asia/Colombo'})
+                      , true)}/>
         </div>
 
     );

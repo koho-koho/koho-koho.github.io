@@ -2,7 +2,8 @@
     border: solid 1px #F7B718;
     border-radius: 10px;
     display: grid;
-    margin: 5px;
+    margin: 20px;
+    min-width: 40vw;
 }
 
 .card-item {
@@ -28,4 +29,33 @@
     font-size: calc(10px + 2vmin);
 }
 
+button {
+    padding: 10px;
+    font-size: calc(6px + 2vmin);
+    background-color: #941E32;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    border: 0;
+    transition: all 0.5s ease-out;
+}
+
+.active, button:hover {
+    background-color: #F7B718;
+    color: white;
+}
+
+.card-description-container {
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+.description-item {
+    font-size: calc(8px + 2vmin);
+
+    div {
+        color: white;
+    }
+}
 
