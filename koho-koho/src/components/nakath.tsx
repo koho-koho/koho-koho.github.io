@@ -57,7 +57,7 @@ const Nakath = () => {
 
             <Card titles={["ආහාර පිසීම", "Preparation of the traditional meal"]}
                   times={get_times(
-                      DateTime.fromObject({year: 2025, month: 4, day: 13, hour: 4, minute: 4, second: 0},
+                      DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 4, minute: 4, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}/>
 
