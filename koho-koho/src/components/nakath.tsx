@@ -25,7 +25,7 @@ const Nakath = () => {
     // Add backdrop of pahanawal emojis rolling around/ falling from the top
     return (
         <div className="nakath-container">
-            <Card titles={["අභිනව චන්ද්‍ර වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the new lunar year"]}
+            <Card titles={["අභිනව චන්ද්‍ර වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the lunar new year"]}
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 3, day: 30},
                           {zone: 'Asia/Colombo'})
@@ -37,7 +37,7 @@ const Nakath = () => {
                           {zone: 'Asia/Colombo'})
                       , true)}
                   descriptions={["දිඹුල්පත් යුෂ මිශ්‍ර නානු ගා ස්නානය කොට ඉෂ්ට දේවතා අනුස්මරණයෙහි යෙදී වාසය මැනවි.",
-                      "Bathe in a bath mixed with juice from woodapple leaves and dwell in the remembrance of gods."]}/>
+                      "Take a herbal bath with juice extracted from woodapple leaves, and engage in religious observances and prayers to seek blessings for the coming year."]}/>
 
             <Card titles={["පුණ්‍ය කාලයේ ආරම්භය", "Start of neutral period"]}
                   times={get_times(
@@ -51,7 +51,8 @@ const Nakath = () => {
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 3, minute: 21, second: 0},
                           {zone: 'Asia/Colombo'})
-                  )}/>
+                  )}
+            descriptions={["පහන දල්වා අවුරුදු චාරිත්‍ර ආරම්භ කිරීම මැනවි.", "Light the oil lamp and begin the New Year rituals."]}/>
 
             <Card titles={["ආහාර පිසීම", "Preparation of the traditional meal"]}
                   times={get_times(
@@ -59,7 +60,7 @@ const Nakath = () => {
                           {zone: 'Asia/Colombo'})
                   )}
                   descriptions={["තඹ වර්ණ වස්ත්‍රාභරණයෙන් සැරසී දකුණු දිශාව බලා ලිප් බැද ගිණි මොළවා කිරිබතක් ද කැවිලි වර්ගයක්ද දී කිරි හා විළඳ ද පිළියෙල කර ගැනීම මැනවි.",
-                      "Dressed in copper colored clothes and facing South direction, light the hearth 🪔 Prepare milk rice and sweetmeats from this boiled milk."]}/>
+                      "Dressed in copper colored clothes and facing South, light the hearth 🪔 Prepare milk rice (from the boiled milk) and sweetmeats."]}/>
 
             <Card
                 titles={["වැඩ ඇල්ලීම, ගනුදෙනු කිරීම හා ආහාර අනුභවය", "Engaging in work, transactions and consuming the traditional meal made"]}
@@ -68,7 +69,7 @@ const Nakath = () => {
                         {zone: 'Asia/Colombo'})
                 )}
                 descriptions={["මුතු හා ස්වේත වර්ණ වස්ත්‍රාභරණයෙන් සැරසී දකුණු දිශාව බලා සියළු වැඩ අල්ලා ගනුදෙනු කොට ආහාර අනුභවය මැනවි.",
-                    "Dressed in pearls and white colored clothes, facing South, engage in work/study, transactions and consumption of the traditional meal made."]}/>
+                    "Dressed in pearl-coloured and white colored clothing, facing South, engage in work/study, transactions and consumption of the traditional meal prepared."]}/>
 
             <Card titles={["පුණ්‍ය කාලයේ අවසානය", "End of neutral period"]}
                   times={get_times(
@@ -82,7 +83,7 @@ const Nakath = () => {
                           {zone: 'Asia/Colombo'})
                   )}
                   descriptions={["පච්ච වර්ණ හෙවත් කොළ පැහැති වස්ත්‍රාභරණයෙන් සැරසී උතුරු දිශාව බලා හිසට කොහොඹ පත්ද, පයට කොළොන් පත්ද තබා කොහොඹ පත් යුෂ මිශ්‍ර නානුද තෙල්ද ගා ස්නානය කිරීම මැනවි.",
-                      "Dressed in green coloured clothing, facing North, put kohamba leaves above the head and kolon leaves under the feet and anoint oil mixed with kohamba leaf juice."]}/>
+                      "Dressed in green coloured clothing, facing North, put kohamba (neem) leaves above the head and kolon leaves under the feet and anoint oil infused with kohamba leaf juice."]}/>
 
             <Card titles={["රැකීරක්‍ෂා සඳහා පිටත්ව යෑම", "Depart for work"]}
                   times={get_times(
@@ -99,7 +100,7 @@ const Nakath = () => {
                       , true)}
                   descriptions={["විචිත්‍ර වර්ණ වස්ත්‍රාභරණයෙන් සැරසී නැගෙනහිර දිශාව බලා පැල සිටුවීම මැනවි.", "Wear colorful clothes and plant plants facing East."]}/>
 
-            <Card titles={["අභිනව සූර්ය වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the new solar year"]}
+            <Card titles={["අභිනව සූර්ය වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the solar new year"]}
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 5, day: 1},
                           {zone: 'Asia/Colombo'})
