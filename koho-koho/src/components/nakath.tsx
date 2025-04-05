@@ -44,7 +44,7 @@ const Nakath = () => {
                       DateTime.fromObject({year: 2025, month: 4, day: 13, hour: 20, minute: 57, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}
-                  descriptions={["පළමුව ආහාර පාන ගෙන සියලු වැඩ අත්හැර ආගමික වතාවත් වල යෙදීම.",
+                  descriptions={["පළමුව ආහාර පාන ගෙන සියලු වැඩ අත්හැර ආගමික වතාවත් වල යෙදීම මැනවි.",
                       "First, consume food and drinks, then, stop all work and engage in religious rites."]}/>
 
             <Card titles={["🧨 අලුත් අවුරුදු උදාව", "Dawn of the new year"]}
