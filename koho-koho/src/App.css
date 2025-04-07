@@ -106,3 +106,9 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+
+.tamil-description-container {
+    color: #fff;
+    font-size: calc(12px + 2vmin);
+    background-color: #DF7500;
+}

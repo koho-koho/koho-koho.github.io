@@ -13,7 +13,7 @@ const Card = (props: { titles: string[], times: string[], descriptions?: string[
                     <div className="card-sub-heading">{props.titles[1]}</div>
                 </div>
                 <div className="card-item-titles">
-                    <div className="card-heading card-time-heading">{props.times[0]}</div>
+                    <div className="card-heading">{props.times[0]}</div>
                     <div className="card-sub-heading">{props.times[1]}</div>
                 </div>
             </div>
