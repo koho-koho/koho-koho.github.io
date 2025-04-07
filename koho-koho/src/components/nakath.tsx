@@ -8,11 +8,12 @@ import Card from "./card";
 
 const Nakath = () => {
     const user_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    console.log(user_timezone);
     const user_locale = getUserLocale();
 
     const get_times = (nakath_time: DateTime, date_only?: boolean) => {
 
-        const sl_time_formatted = date_only ?
+        const sl_time = date_only ?
             nakath_time.setLocale("si-LK").toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY) :
             nakath_time.setLocale("si-LK").toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY) ?? ""
 
@@ -20,7 +21,10 @@ const Nakath = () => {
             nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY) :
             nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY) ?? ""
 
-        return [sl_time_formatted, user_time]
+        const sl_time_tz = `${sl_time} : : Sri Lanka/Colombo`;
+        const user_time_tz = `${user_time} : : ${user_timezone}`;
+
+        return [sl_time_tz, user_time_tz]
     }
     // Add backdrop of pahanawal emojis rolling around/ falling from the top
     return (
