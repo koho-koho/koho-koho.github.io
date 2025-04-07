@@ -49,14 +49,14 @@ const Nakath = () => {
                           {zone: 'Asia/Colombo'})
                   )}
                   descriptions={["පළමුව ආහාර පාන ගෙන සියලු වැඩ අත්හැර ආගමික වතාවත් වල යෙදීම මැනවි.",
-                      "First, consume food and drinks, then, stop all work and engage in religious rites."]}/>
+                      "First, consume food and drinks, then, pause all work and engage in religious observances."]}/>
 
             <Card titles={["🧨 අලුත් අවුරුදු උදාව", "Dawn of the new year"]}
                   times={get_times(
                       DateTime.fromObject({year: 2025, month: 4, day: 14, hour: 3, minute: 21, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}
-            descriptions={["පහන දල්වා අවුරුදු චාරිත්‍ර ආරම්භ කිරීම මැනවි.", "Light the oil lamp and begin the New Year rituals."]}/>
+            descriptions={["පහන දල්වා අවුරුදු චාරිත්‍ර ආරම්භ කිරීම මැනවි.", "Light the oil lamp and begin the New Year 🪔"]}/>
 
             <Card titles={["ආහාර පිසීම", "Preparation of the traditional meal"]}
                   times={get_times(
