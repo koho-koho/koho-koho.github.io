@@ -21,10 +21,7 @@ const Nakath = () => {
             nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY) :
             nakath_time.setZone(user_timezone).setLocale(user_locale).toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY) ?? ""
 
-        const sl_time_tz = `${sl_time} : : Sri Lanka/Colombo`;
-        const user_time_tz = `${user_time} : : ${user_timezone}`;
-
-        return [sl_time_tz, user_time_tz]
+        return [{time: sl_time, tz: 'Sri Lanka/Colombo'}, {time: user_time, tz: user_timezone}]
     }
     // Add backdrop of pahanawal emojis rolling around/ falling from the top
     return (

@@ -25,10 +25,16 @@
     font-size: calc(10px + 2vmin);
 }
 
+.card-tz {
+    color: #005F56;
+    font-size: calc(8px + 2vmin);
+    padding-bottom: 20px;
+}
+
 button {
     padding: 10px;
     font-size: calc(8px + 2vmin);
-    background-color: #DF7500;
+    background-color: #F7B718;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -38,7 +44,7 @@ button {
 }
 
 .active, button:hover {
-    background-color: #F7B718;
+    background-color: #DF7500;
     color: white;
 }
 

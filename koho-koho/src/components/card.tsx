@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './card.css';
 import expandIcon from '../icons/expand.svg';
 
-const Card = (props: { titles: string[], times: string[], descriptions?: string[] }) => {
+const Card = (props: { titles: string[], times: { time: string; tz: string; }[], descriptions?: string[] }) => {
     const [displayDetails, setDisplayDetails] = useState(false)
 
     return (
@@ -13,8 +13,14 @@ const Card = (props: { titles: string[], times: string[], descriptions?: string[
                     <div className="card-sub-heading">{props.titles[1]}</div>
                 </div>
                 <div className="card-item-titles">
-                    <div className="card-heading">{props.times[0]}</div>
-                    <div className="card-sub-heading">{props.times[1]}</div>
+                    <div className="card-heading">
+                        <div>{props.times[0].time}</div>
+                        <div className="card-tz">{props.times[0].tz}</div>
+                    </div>
+                    <div className="card-sub-heading">
+                        <div>{props.times[1].time}</div>
+                        <div className="card-tz">{props.times[1].tz}</div>
+                    </div>
                 </div>
             </div>
             {props.descriptions !== undefined &&
