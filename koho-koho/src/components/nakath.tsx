@@ -28,7 +28,7 @@ const Nakath = () => {
         <div className="nakath-container">
             <Card titles={["අභිනව චන්ද්‍ර වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the lunar new year"]}
                   times={get_times(
-                      DateTime.fromObject({year: 2026, month: 3, day: 30},
+                      DateTime.fromObject({year: 2026, month: 3, day: 20},
                           {zone: 'Asia/Colombo'})
                       , true)}/>
 
@@ -80,7 +80,7 @@ const Nakath = () => {
 
              <Card titles={["හිසතෙල් ගෑම", "Anointing oil"]}
                   times={get_times(
-                      DateTime.fromObject({year: 2026, month: 4, day: 16, hour: 6, minute: 55, second: 0},
+                      DateTime.fromObject({year: 2026, month: 4, day: 15, hour: 6, minute: 55, second: 0},
                           {zone: 'Asia/Colombo'})
                   )}
                   descriptions={["පච්ච වර්ණ හෙවත් කොළ පැහැති වස්ත්‍රාභරණයෙන් සැරසී නැගෙනහිර දිශාව බලා හිසට කොහොඹ පත්ද, පයට කොළොන් පත්ද තබා කොහොඹ පත් යුෂ මිශ්‍ර නානුද තෙල්ද ගා ස්නානය කිරීම මැනවි.",
@@ -98,7 +98,7 @@ const Nakath = () => {
                   times={get_times(
                       DateTime.fromObject({year: 2026, month: 4, day: 23, hour: 9, minute: 1, second: 0},
                           {zone: 'Asia/Colombo'})
-                      , true)}
+                  )}
                   descriptions={["රන්වන් පැහැති වස්ත්‍රාභරණයෙන් සැරසී උතුරු දිශාව බලා පැල සිටුවීම මැනවි.", "Wear gold coloured clothes, plant plants facing North."]}/>
 
             <Card titles={["අභිනව සූර්ය වර්ෂය සඳහා නව සඳ බැලීම", "Observing the new moon for the solar new year"]}
